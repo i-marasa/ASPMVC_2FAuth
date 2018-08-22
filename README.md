@@ -295,19 +295,33 @@ After creating project, go to solution name, right click, then NuGet Package Man
 ````
 
 12- Test and View
+
         * Download and install Google authenticator from the [Play Store](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en) for Android and from the [App Store](https://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8) for iOS
+        
         * Run Project
+        
         * Register new User
+        
         ![alt tag](https://image.prntscr.com/image/FJphO6pDScmRmm3ByNUzaA.png)
+        
         * go to Manage page 
+        
         ![alt tag](https://image.prntscr.com/image/WO5xYYpMT-mCPh5AIfclAA.png)
+        
         * Enable Two Factor Authentication using Google Authenticator
+        
         ![alt tag](https://image.prntscr.com/image/mBrluwVzQqqAbI0s3YPuMg.png)
+        
         * Scan Barcode using Google Authenticator on your mobile
+        
         ![alt tag](https://image.prntscr.com/image/O0X7OVrNTqi3hcKXixHmnQ.png)
+        
         ![alt tag](https://image.prntscr.com/image/FLiwKvUYQSaZGQQc1MCwDw.png)
+        
         * Type Passcode, then click submit
+        
         * To test 2Factor Auth, logout, then login again, it must require 2Factor Auth using Google Authenticator
+        
        
         
         
