@@ -120,6 +120,7 @@ namespace ASPMVC_2FAuth.Controllers
         [AllowAnonymous]
         public ActionResult Verify2FA(string returnUrl)
         {
+            //check if user login
             if (String.IsNullOrEmpty(Session["username"] + "") || String.IsNullOrEmpty(Session["password"] + ""))
                 return RedirectToAction("Login");
             ViewBag.ReturnUrl = returnUrl;
