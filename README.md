@@ -13,7 +13,7 @@ Full sample to create ASP.NET MVC with Individual User Account Authentication an
 After creating project, go to solution name, right click, then NuGet Package Manager
 ![alt tag](https://image.prntscr.com/image/6xcFFFjvSYOdAMoqizVYmg.png)
 
-3- Customize Identity Properties to add two columns to AspNetUsers that will created next, by adding these properties to ApplicationUser class in IdentityModels.cs
+3- Customize Identity Properties, add two columns to AspNetUsers that will created next, by adding these properties to ApplicationUser class in IdentityModels.cs
 ````csharp
         public bool TwoFactorGoogleEnabled { get; set; }
         public string TwoFactorGoogleCode { get; set; }
@@ -22,7 +22,7 @@ After creating project, go to solution name, right click, then NuGet Package Man
 
 
 
-4- Go to Controllers -> ManageController, Add update index ActionView by adding this code befor return view() that will be used for updated design in next steps
+4- Go to Controllers -> ManageController, update index ActionView by adding this code befor return view() that will be used for updated design in next steps
 ````csharp
             var currentUser = await UserManager.FindByIdAsync(userId);
             ViewBag._2FAuthEnabled = currentUser.TwoFactorGoogleEnabled ? "enabled" : "disabled";
